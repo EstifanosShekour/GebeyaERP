@@ -35,24 +35,28 @@ def get_setup_stages(args=None):
             "icon": "fa fa-store",
             "title": _("Your Shop"),
             "fields": _shop_fields(),
+            "tasks": [],
         },
         {
             "name": "gebeya_tax",
             "icon": "fa fa-file-invoice",
             "title": _("Tax Setup"),
             "fields": _tax_fields(),
+            "tasks": [],
         },
         {
             "name": "gebeya_products",
             "icon": "fa fa-box-open",
             "title": _("Starter Products"),
             "fields": _product_fields(),
+            "tasks": [],
         },
         {
             "name": "gebeya_ai",
             "icon": "fa fa-magic",
             "title": _("PulseCheck AI"),
             "fields": _ai_fields(),
+            "tasks": [],
         },
     ]
 
