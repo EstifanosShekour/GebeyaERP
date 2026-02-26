@@ -4,7 +4,8 @@
       "Bash(python3.exe -c \"import json; print\\(''ok''\\)\")",
       "Bash(py -3 -c \":*)",
       "Bash(py -3 -c \"import json; data=json.load\\(open\\(''c:/Users/estifo/OneDrive/Projects/gebeyaerp/gebeyaerp/fixtures/print_format.json''\\)\\); print\\(f''Valid JSON: {len\\(data\\)} record\\(s\\); HTML length: {len\\(data[0][\"\"html\"\"]\\)} chars''\\)\")",
-      "Bash(py -3 -m py_compile \"c:/Users/estifo/OneDrive/Projects/gebeyaerp/gebeyaerp/gebeyaerp/doctype/pulsecheck_report/test_pulsecheck_report.py\")"
+      "Bash(py -3 -m py_compile \"c:/Users/estifo/OneDrive/Projects/gebeyaerp/gebeyaerp/gebeyaerp/doctype/pulsecheck_report/test_pulsecheck_report.py\")",
+      "WebFetch(domain:github.com)"
     ],
     "additionalDirectories": [
       "C:\\Users\\estifo\\.claude\\projects\\c--Users-estifo-OneDrive-Projects-gebeyaerp"
