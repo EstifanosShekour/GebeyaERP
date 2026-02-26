@@ -1,0 +1,128 @@
+{
+  "actions": [],
+  "autoname": "GDS-.YYYY.-.MM.-.DD.-.####",
+  "creation": "2026-02-25 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "date",
+    "company",
+    "column_break_1",
+    "total_sales",
+    "total_invoices",
+    "total_items_sold",
+    "sales_section",
+    "top_selling_item",
+    "new_customers",
+    "payments_section",
+    "cash_collected",
+    "mobile_money_collected",
+    "column_break_2",
+    "bank_collected",
+    "credit_given"
+  ],
+  "fields": [
+    {
+      "fieldname": "date",
+      "fieldtype": "Date",
+      "label": "Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "company",
+      "fieldtype": "Link",
+      "label": "Company",
+      "options": "Company",
+      "reqd": 1
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "total_sales",
+      "fieldtype": "Currency",
+      "label": "Total Sales",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "total_invoices",
+      "fieldtype": "Int",
+      "label": "Total Invoices",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "total_items_sold",
+      "fieldtype": "Int",
+      "label": "Total Items Sold"
+    },
+    {
+      "fieldname": "sales_section",
+      "fieldtype": "Section Break",
+      "label": "Details"
+    },
+    {
+      "fieldname": "top_selling_item",
+      "fieldtype": "Data",
+      "label": "Top Selling Item"
+    },
+    {
+      "fieldname": "new_customers",
+      "fieldtype": "Int",
+      "label": "New Customers"
+    },
+    {
+      "fieldname": "payments_section",
+      "fieldtype": "Section Break",
+      "label": "Payment Breakdown"
+    },
+    {
+      "fieldname": "cash_collected",
+      "fieldtype": "Currency",
+      "label": "Cash"
+    },
+    {
+      "fieldname": "mobile_money_collected",
+      "fieldtype": "Currency",
+      "label": "Mobile Money (Telebirr / CBE Birr)"
+    },
+    {
+      "fieldname": "column_break_2",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "bank_collected",
+      "fieldtype": "Currency",
+      "label": "Bank Transfer"
+    },
+    {
+      "fieldname": "credit_given",
+      "fieldtype": "Currency",
+      "label": "Credit Given"
+    }
+  ],
+  "links": [],
+  "modified": "2026-02-25 00:00:00.000000",
+  "modified_by": "Administrator",
+  "module": "Gebeyaerp",
+  "name": "Daily Summary",
+  "naming_rule": "Expression (old style)",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "date",
+  "sort_order": "DESC"
+}

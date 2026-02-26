@@ -1,0 +1,155 @@
+{
+  "actions": [],
+  "creation": "2026-02-25 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "shop_section",
+    "shop_name",
+    "shop_type",
+    "owner_name",
+    "owner_phone",
+    "location",
+    "column_break_1",
+    "company",
+    "currency",
+    "fiscal_year_start",
+    "tax_section",
+    "tax_type",
+    "vat_tin",
+    "ai_section",
+    "claude_api_key",
+    "claude_model",
+    "setup_section",
+    "setup_complete"
+  ],
+  "fields": [
+    {
+      "fieldname": "shop_section",
+      "fieldtype": "Section Break",
+      "label": "Shop Information"
+    },
+    {
+      "fieldname": "shop_name",
+      "fieldtype": "Data",
+      "label": "Shop Name",
+      "reqd": 1
+    },
+    {
+      "fieldname": "shop_type",
+      "fieldtype": "Select",
+      "label": "Shop Type",
+      "options": "\nGrocery\nElectronics\nClothing\nHardware\nPharmacy\nRestaurant\nGeneral",
+      "reqd": 1
+    },
+    {
+      "fieldname": "owner_name",
+      "fieldtype": "Data",
+      "label": "Owner Name"
+    },
+    {
+      "fieldname": "owner_phone",
+      "fieldtype": "Data",
+      "label": "Owner Phone"
+    },
+    {
+      "fieldname": "location",
+      "fieldtype": "Data",
+      "label": "Location",
+      "description": "City, Kebele, or area"
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "company",
+      "fieldtype": "Link",
+      "label": "Company",
+      "options": "Company"
+    },
+    {
+      "fieldname": "currency",
+      "fieldtype": "Link",
+      "label": "Currency",
+      "options": "Currency",
+      "default": "ETB"
+    },
+    {
+      "fieldname": "fiscal_year_start",
+      "fieldtype": "Select",
+      "label": "Fiscal Year Start",
+      "options": "\nJuly (Ethiopian)\nJanuary (Gregorian)",
+      "default": "July (Ethiopian)"
+    },
+    {
+      "fieldname": "tax_section",
+      "fieldtype": "Section Break",
+      "label": "Tax Configuration"
+    },
+    {
+      "fieldname": "tax_type",
+      "fieldtype": "Select",
+      "label": "Tax Type",
+      "options": "\nVAT\nTOT\nNone",
+      "reqd": 1,
+      "description": "VAT (15%) for registered businesses, TOT for small businesses"
+    },
+    {
+      "fieldname": "vat_tin",
+      "fieldtype": "Data",
+      "label": "TIN / VAT Registration Number"
+    },
+    {
+      "fieldname": "ai_section",
+      "fieldtype": "Section Break",
+      "label": "PulseCheck AI Configuration",
+      "collapsible": 1
+    },
+    {
+      "fieldname": "claude_api_key",
+      "fieldtype": "Password",
+      "label": "Claude API Key",
+      "description": "Get your key from console.anthropic.com"
+    },
+    {
+      "fieldname": "claude_model",
+      "fieldtype": "Data",
+      "label": "Claude Model",
+      "default": "claude-sonnet-4-20250514"
+    },
+    {
+      "fieldname": "setup_section",
+      "fieldtype": "Section Break",
+      "label": "System",
+      "collapsible": 1
+    },
+    {
+      "fieldname": "setup_complete",
+      "fieldtype": "Check",
+      "label": "Setup Complete",
+      "read_only": 1
+    }
+  ],
+  "issingle": 1,
+  "links": [],
+  "modified": "2026-02-25 00:00:00.000000",
+  "modified_by": "Administrator",
+  "module": "Gebeyaerp",
+  "name": "Shop Settings",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "print": 1,
+      "read": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

@@ -1,0 +1,125 @@
+[
+  {
+    "doctype": "Custom Field",
+    "name": "Item-custom_retail_category",
+    "dt": "Item",
+    "label": "Retail Category",
+    "fieldname": "custom_retail_category",
+    "fieldtype": "Select",
+    "options": "\nFood\nElectronics\nClothing\nHousehold\nMedicine\nOther",
+    "insert_after": "item_name",
+    "in_list_view": 1,
+    "module": "Gebeyaerp"
+  },
+  {
+    "doctype": "Custom Field",
+    "name": "Item-custom_reorder_point",
+    "dt": "Item",
+    "label": "Reorder Point",
+    "fieldname": "custom_reorder_point",
+    "fieldtype": "Int",
+    "insert_after": "custom_retail_category",
+    "description": "Minimum stock quantity before a low-stock alert is triggered",
+    "module": "Gebeyaerp"
+  },
+  {
+    "doctype": "Custom Field",
+    "name": "Item-custom_profit_margin",
+    "dt": "Item",
+    "label": "Profit Margin %",
+    "fieldname": "custom_profit_margin",
+    "fieldtype": "Percent",
+    "insert_after": "custom_reorder_point",
+    "read_only": 1,
+    "description": "Auto-calculated: (Selling Price - Valuation Rate) / Valuation Rate",
+    "module": "Gebeyaerp"
+  },
+  {
+    "doctype": "Custom Field",
+    "name": "Customer-custom_phone",
+    "dt": "Customer",
+    "label": "Phone",
+    "fieldname": "custom_phone",
+    "fieldtype": "Data",
+    "options": "Phone",
+    "insert_after": "customer_name",
+    "in_list_view": 1,
+    "module": "Gebeyaerp"
+  },
+  {
+    "doctype": "Custom Field",
+    "name": "Customer-custom_location",
+    "dt": "Customer",
+    "label": "Location",
+    "fieldname": "custom_location",
+    "fieldtype": "Data",
+    "insert_after": "custom_phone",
+    "description": "City, Kebele, or area",
+    "module": "Gebeyaerp"
+  },
+  {
+    "doctype": "Custom Field",
+    "name": "Customer-custom_notes",
+    "dt": "Customer",
+    "label": "Notes",
+    "fieldname": "custom_notes",
+    "fieldtype": "Small Text",
+    "insert_after": "custom_location",
+    "module": "Gebeyaerp"
+  },
+  {
+    "doctype": "Custom Field",
+    "name": "Sales Invoice-custom_payment_method",
+    "dt": "Sales Invoice",
+    "label": "Payment Method",
+    "fieldname": "custom_payment_method",
+    "fieldtype": "Select",
+    "options": "\nCash\nMobile Money (Telebirr / CBE Birr)\nBank Transfer\nCredit",
+    "insert_after": "due_date",
+    "in_list_view": 1,
+    "module": "Gebeyaerp"
+  },
+  {
+    "doctype": "Custom Field",
+    "name": "Sales Invoice-custom_receipt_printed",
+    "dt": "Sales Invoice",
+    "label": "Receipt Printed",
+    "fieldname": "custom_receipt_printed",
+    "fieldtype": "Check",
+    "insert_after": "custom_payment_method",
+    "module": "Gebeyaerp"
+  },
+  {
+    "doctype": "Custom Field",
+    "name": "Employee-custom_role_in_shop",
+    "dt": "Employee",
+    "label": "Role in Shop",
+    "fieldname": "custom_role_in_shop",
+    "fieldtype": "Select",
+    "options": "\nOwner\nManager\nCashier\nStock Keeper\nSales\nOther",
+    "insert_after": "designation",
+    "in_list_view": 1,
+    "module": "Gebeyaerp"
+  },
+  {
+    "doctype": "Custom Field",
+    "name": "Employee-custom_monthly_salary",
+    "dt": "Employee",
+    "label": "Monthly Salary (ETB)",
+    "fieldname": "custom_monthly_salary",
+    "fieldtype": "Currency",
+    "insert_after": "custom_role_in_shop",
+    "in_list_view": 1,
+    "module": "Gebeyaerp"
+  },
+  {
+    "doctype": "Custom Field",
+    "name": "Employee-custom_id_number",
+    "dt": "Employee",
+    "label": "National ID / Kebele ID",
+    "fieldname": "custom_id_number",
+    "fieldtype": "Data",
+    "insert_after": "date_of_joining",
+    "module": "Gebeyaerp"
+  }
+]

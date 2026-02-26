@@ -1,0 +1,10 @@
+[
+  {
+    "doctype": "Customer",
+    "name": "Walk-in Customer",
+    "customer_name": "Walk-in Customer",
+    "customer_type": "Individual",
+    "customer_group": "Individual",
+    "territory": "All Territories"
+  }
+]

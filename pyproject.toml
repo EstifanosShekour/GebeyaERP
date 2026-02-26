@@ -1,0 +1,19 @@
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "gebeyaerp"
+authors = [
+    {name = "Haron Computer PLC", email = "info@haroncomputer.com"}
+]
+description = "A simple ERP for Ethiopian retail businesses"
+requires-python = ">=3.10"
+readme = "README.md"
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://haronerp.com"
+
+[tool.flit.module]
+name = "gebeyaerp"
